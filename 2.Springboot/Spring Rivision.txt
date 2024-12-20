@@ -1,0 +1,7 @@
+Spring Rivision
+1> dependency injection
+2> inversion of control(ioc)
+3>ioc container
+4> application context
+5> beans and beans scope
+6> whole spring boot mvc

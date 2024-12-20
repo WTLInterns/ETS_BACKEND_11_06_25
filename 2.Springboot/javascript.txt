@@ -1,0 +1,5 @@
+javascript
+
+Actions -> actions means what will do after performing any actions like(on clicking submit button data should be submit)
+
+	

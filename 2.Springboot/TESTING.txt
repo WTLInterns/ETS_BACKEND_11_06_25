@@ -1,0 +1,25 @@
+TESTING
+before testing we have to write @Test above method to declare that we are testing otherwise it will not test
+1> assertEquals(expectedOutput,ActalOutput,"If test case is failed then what we have write here that will print"); it is use for compare both output means for testing
+2> assertNotEquals(expectedOutput,ActalOutput,"If test case is failed then what we have write here that will print") is exactly opposite of           assertEquals if test cases pass it will show fail , if test cases will fail it will show pass
+3> assertTrue if we pass test case as true then it will succeed 
+4> assertFalse if is opposite of assert false 
+5> assertArrayEquals(in this method both array should have same lenght as well as same element on same index)
+6> tryCatchException see telusko video for tryCatchException
+7> assertTimeout(Duration.ofMillis(10),()-> Method), this method should finish in whatever time we give here if in given time test case doesnt 
+   pass it will fail
+8> @BeforeEach is use for if we want to run any method before the every method that we are testing this BeforeEach will
+   run each and every time before the other methods  it is useful for any activity that is common for every method 
+   if we have 10 test case then it will run for 10 different times before the test method run
+9> @AfterEach is use for if we want to run any method After the every method that we are testing this AfterEach will 
+   run each and every time After the other methods  it is useful for any activity that is common for every method
+10> @BeforeAll it will execute only once it is first method that is going to called 
+11> @AfterAll it will execute only once after running all the test cases 
+12> @TestInstance create method once and call for per class (@TestInstance.LifeCycle.PerClass)
+13> @DisplayName for displaying name 
+14> @Disabled if one of the method failed it will lead to occur all the test case will failed to diabled that method we will use @Disabled
+15> @EnabledOs it is use for decide on which operatingSystem we have to run
+16> @asuumeTrue it is same like if statement if the assumeTrue value is true the next part will execute
+17> @assumeFalse it is opposite of @assumeTrue
+18> @Nested is is useful for nested same type of test cases 
+19> @RepetedTest(Number) it is use for repetation of same test case here number is use for how many time test case should repeat

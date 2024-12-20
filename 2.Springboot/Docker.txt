@@ -1,0 +1,84 @@
+docker run imageName           for running image
+docker ps                      which container is running
+docker ps -a                   for seeing all the containers 
+docker images                  for seeing how many images I have and also id of that image 
+docker exec                    Execute a command in a running container
+docker ps                      List containers
+docker rename                  Rename a container
+docker restart                 Restart one or more containers
+docker rm containerId          Remove one or more containers
+docker rmi imageId             Remove one or more images
+docker create imageName        creating our own image 
+docker save                    Save one or more images to a tar archive (streamed to STDOUT by default)
+docker start                   Start one or more stopped containers
+docker stats                   Display a live stream of container(s) resource usage statistics
+docker stop                    Stop one or more running containers
+
+docker build           Build an image from a Dockerfile
+docker pull            Download an image from a registry
+docker push            Upload an image to a registry
+docker images          List images
+docker login           Authenticate to a registry
+docker logout          Log out from a registry
+docker search          Search Docker Hub for images
+docker version         Show the Docker version information
+docker info            Display system-wide information
+
+
+
+for setup OpenJDK on docker 
+docker pull OpenJDK:22-jdk             for installing image of openjdk
+docker run OpenJDK:22-jdk              for running on docker 
+docker run -it OpenJDK:22-jdk          what happen actually when we run image it automatically got exited so if we want to continueslly running we use these command
+after that create a jar file of springBoot application 
+docker exec containerName ls -a        it will give all the file  
+docker exec containerName ls /tmp       it will open temporary folder 
+docker cp filePath containerName:/tmp    for copy file from file path to container
+docker commit --change='CMD ["java","-jar","/tmp/fileName"]'conatinerName nameOfIleThatYouWantToGIveToYourFile:tag to run our project on docker engine now to run on outside dockerengine 
+docker run -p ImageName 8080(dockerPort):8080(machinePort) yourImageName:tag 
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx
+  compose*    Docker Compose
+  container   Manage containers
+  context     Manage contexts
+  debug*      Get a shell into any image or container
+  desktop*    Docker Desktop commands (Alpha)
+  dev*        Docker Dev Environments
+  extension*  Manages Docker extensions
+  feedback*   Provide feedback, right in your terminal!
+  image       Manage images
+  init*       Creates Docker-related starter files for your project
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  sbom*       View the packaged-based Software Bill Of Materials (SBOM) for an image
+  scout*      Docker Scout
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes 

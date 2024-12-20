@@ -1,0 +1,8 @@
+cryptography means share the data in the form of encryption and decryption so no middleman can attack these or read the data 
+we encrypt the data and send to the receiver for decryption we send a key, key is of two type Symmetric and Asymmetric 
+
+encryption mean transfer plain text to cipher text
+decryption mean transfer cipher text to plain text
+
+1> in Symmetric sender and receiver have same keys
+2> in Asymmetric sender and receiver have different keys

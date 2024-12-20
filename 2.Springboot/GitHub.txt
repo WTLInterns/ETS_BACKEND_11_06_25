@@ -1,0 +1,29 @@
+GitHub
+git init-> for local repository 
+git status -> for checking status 
+git add filename ->for adding file and also for adding in staging after staging process we can commit every time before commit we have to add the file  
+git commit -m "here you can pass message"-> these for commit 
+git log -> check all the commit done by devlopers/people 
+git diff -> it will show all the changes made 
+git rm  --cached filename -> for removing file which name we are given here
+cat -> is use for command or open the file 
+git branch -M main -> for getting the main branch
+cd .filename-> is  use for change directory i mean for enter the folder 
+pwd -> present working directory
+mkdir-> for creating folder 
+cat filename-> to see content in that file 
+ssh-keygen -o -> this key is use for connect the local repository to remote repository
+cat id_rsa.pub -> for get the key now copy the key and go to GitHub setting and click on new ssh key and paste there this key now local and remote is connected 
+git push origin main-> first we track the file and commit on local machine and then push on remote git
+git remote -v ->for checking how many are remote and local user 
+git tag -> how many tags you given
+git tag -a v(version_no(like 1.0,1.1)) -m "message"-> it is for giving the tag
+git checkout -b branchname -> for creating branch
+git switch main -> for switching branch
+git branch -> to check in which branch you are present
+git checkout -d branchname -> for deleting branch
+git push origin branchname -> for pushing branch from local to remote 
+git merge branchname -> for these we have to first switch to main branch and we should pull before merge
+git pull origin main->
+git rebase branchname-> optimize or better way of merging
+git clone ssh-id -> project will come to your ide whose ssh-id you have written

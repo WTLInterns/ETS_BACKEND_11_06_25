@@ -1,0 +1,27 @@
+Spring
+
+*** It is xml based configuration ***
+1> ApplicationContext -> it is use for container creation also for the object creation of that for which we declare in bean in xml
+2> .getBean("name which we mention in bin for this class")-> for accessing the object or declaring the object
+3> object creation-> refer to spring 1
+4> scope -> refer to spring 1
+5> setter injection -> refer to spring 1
+6> ref attribute -> refer to spring 1
+7> constructor injection ->  refer to spring 1
+8> creating interface -> refer to spring 1
+9> primary bin -> refer to spring 1
+
+
+ioc -> inversion of control control the business logic
+spring ioc container -> container which have all the objects 
+di-> there are three types of injection
+1> setter injection
+2> field injection
+3> constructor injection 
+Constructor injection
+Uses the class constructor to provide dependencies. This is considered the recommended approach. 
+Setter injection
+Beans are not immutable, and missing dependencies can cause NullPointerExceptions. 
+Field injection
+Uses reflection, which can affect performance. This type of injection can be used in test classes. 
+  

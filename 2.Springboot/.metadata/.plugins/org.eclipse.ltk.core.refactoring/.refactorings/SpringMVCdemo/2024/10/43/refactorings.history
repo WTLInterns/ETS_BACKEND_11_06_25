@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;SpringMVCdemo&apos;&#x0D;&#x0A;- Original project: &apos;SpringMVCdemo&apos;&#x0D;&#x0A;- Original element: &apos;index.jsp&apos;" description="Delete element" element1="src/main/webapp/index.jsp" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1729945776128" subPackages="false" version="1.0"/>&#x0A;<refactoring comment="Rename resource &apos;SpringMVCdemo/src/main/Java&apos; to &apos;java&apos;" description="Rename resource &apos;Java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/Java" name="java" stamp="1729945811468" updateReferences="true"/>
+</session>

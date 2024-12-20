@@ -1,0 +1,23 @@
+iaas -> infrastructure as service
+cass -> container as service 
+paas -> platform as service 
+faas -> function as service 
+saas -> software as service 
+
+
+DEPLOY WEB PAGE ON AWS USING ELASTIC BEANSTALK
+
+always create IAM(identify and access management) and then use services of AWS 
+change port no 8080 to 5000 (because elastic bean run on 5000)-> create a jar file -> search elastic bean stock -> create an application -> web server environment -> give application name
+-> platform (java because we are working with) -> application code(upload your code)-> select version -> local and select jar file from the target -> single instance because it is free ->
+create a role or select exsisting role (for creating a role go to the aws iam and create role)->
+
+DEPLOY DATABASE ON AWS 
+
+for deploy the database then we have to create rds 
+change the port no to 5000->create database ->select databases -> select engine version -> select free tier -> database identifier -> create username and password -> keep all default setting
+-> give to public access(Not a good idea for production)-> keep default settings ->
+
+ELASTIC CONTAINER SERVICE(ECS)
+Do the elastic container service by the AWS CLI if you dont have aws cli then  get the access key and secret access key 
+first click and enter IAM -> click on user ->create key->search for ecs(ELASTIC CONTAINER SERVICE)->create a new cluster and run the task->runt the task for Postgres ->elastic container registery-> push docker image to ECR

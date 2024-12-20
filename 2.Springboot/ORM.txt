@@ -1,0 +1,4 @@
+ORM 
+
+orm means the in database there are different-different column each column represent the object in the model Spring that is known as ORM(Object relation mapping).
+for example there is Student_id,student_name in table in spring project we make model and make objects of Student_id,student_name also the getter and setter for these object .

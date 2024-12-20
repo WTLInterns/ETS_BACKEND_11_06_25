@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean id="alien" class="org.example.Alien" scope="prototype"></bean>-->
+    <!--if we declare scope prototype it will not create object by default in ApplicationContext also
+     for evey new object declaration it will create new object -->
+    <bean id="alien" class="org.example.Alien" autowire="byType" >
+        <property name="age"  value="21"/>
+        <property name ="com" ref="com"/>
+<!--        <property name="com">-->
+<!--<bean id="com" class="org.example.Laptop" primary="true"/>-->
+<!--&lt;!&ndash;this is inner bean and limited for the alien class&ndash;&gt;-->
+<!--        </property>-->
+        <!--it is called setter injection it will set the value for age this is for primitive variable-->
+<!--        <property name="lap" ref="lap1"/>-->
+<!--for reference type we have to write ref insted of value but remember it is setter injection so we have to create setter
+and getter for reference type also and lap1 is id which we have use to create the object of laptop
+and here we need object of laptop for reference, and we have already created that we only have to connect that-->
+<!--        <constructor-arg index="0" value="21"/>-->
+<!--        <constructor-arg index="1" ref="lap1"/>-->
+<!--        <constructor-arg index="2" value="25000"/>-->
+<!--        this is constructor injection it will call the constructor which have 3 parameter because here i have mention
+              3 parameters values/reference by there index no-->
+    </bean>
+    <bean id="com" class="org.example.Laptop" primary="true"/>
+    <bean id="com1" class="org.example.Desktop" lazy-init="true"/>
+<!--if we don't want to load object of desktop by default for this we use lazy-init-->
+</beans>

@@ -1,0 +1,4 @@
+OAUTH
+
+
+google cloud console-> console -> api and services -> credentials -> create credential -> OAuth Client ID -> Application Type -> authorized redirect url(http://localhost:8080/login/oauth2/code/google) -> copy client id and secret and paste it into application.proerties
